@@ -3,36 +3,36 @@ import Card from "./Card";
 const certificate = [
   {
     name: "Networking Devices & Initial Configuration",
-    issuedby: "CISCO Networking Academy",
-    year: "2024",
+    issuedby: "CISCO NetAcad",
+    year: "22 hrs · 2024",
     href: "https://www.credly.com/badges/d8c5f4f5-f93e-4d19-bc64-1eff2edd4024/public_url",
   },
   {
     name: "Networking Basics",
-    issuedby: "CISCO Networking Academy",
-    year: "2024",
+    issuedby: "CISCO NetAcad",
+    year: "22 hrs · 2024",
     href: "https://www.credly.com/badges/1c03517d-fb62-4933-a35d-d12c828f04ec/public_url",
   },
   {
     name: "Technical Support Fundamental",
-    issuedby: "Google (through Coursera)",
-    year: "2024",
+    issuedby: "Google (Coursera)",
+    year: "19 hrs · 2024",
     href: "https://www.coursera.org/account/accomplishments/verify/TGS25BU9F3WC",
   },
   {
     name: "IT Essentials: PC Hardware & Software",
     issuedby: "Bangsamoro ICTO",
-    year: "2024",
+    year: "8 hrs · 2024",
   },
   {
     name: "Web Accessibility Audit",
     issuedby: "DICT Region 10 - ILCDB",
-    year: "2023",
+    year: "20 hrs · 2023",
   },
   {
     name: "Web Development for Web Developers",
     issuedby: "DICT Region 10 - ILCDB",
-    year: "2023",
+    year: "40 hrs · 2023",
   },
   {
     name: "CCNA R&S: Connecting Networks",
