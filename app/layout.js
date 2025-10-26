@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           {children}
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
