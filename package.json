@@ -6,7 +6,8 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "vercel-build": "npm install --legacy-peer-deps && next build"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -27,3 +28,4 @@
     "tailwindcss": "^4"
   }
 }
+
