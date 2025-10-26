@@ -66,7 +66,6 @@ export default function Experience() {
                 }`}
               />
             </div>
-
             <div className="flex-auto transition-colors duration-200">
               <div className="flex justify-between items-center">
                 <div>
