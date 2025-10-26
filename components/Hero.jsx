@@ -74,7 +74,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://calendly.com/abdulhaleem-mamangcao/consultation"
+            href="mailto:abdulhaleem.mamangcao@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium border border-gray-300 bg-white hover:-translate-y-0.5 hover:shadow-md dark:border-gray-700 dark:hover:text-black"
