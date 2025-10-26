@@ -6,12 +6,12 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint",
-    "vercel-build": "npm install --legacy-peer-deps && next build"
+    "lint": "eslint"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@vercel/speed-insights": "^1.2.0",
+    "autoprefixer": "^10.4.21",
     "lucide-react": "^0.548.0",
     "lucide-solid": "^0.548.0",
     "next": "16.0.0",
