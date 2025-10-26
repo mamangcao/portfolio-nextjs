@@ -2,7 +2,7 @@ import Card from "./Card";
 
 export default function Projects() {
   const projects = [
-    { title: "TGC Web App", desc: "A full-stack Laravel + React project for tournament management." },
+    { title: "TGC Web App", desc: "A full-stack Laravel + React project for Islamic Center" },
     { title: "Portfolio Site", desc: "Built with Next.js and Tailwind CSS for showcasing skills." },
   ];
 
