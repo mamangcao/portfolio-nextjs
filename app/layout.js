@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Abdul Haleem Mamangcao | Full-stack Developer",
-  description: "Full-stack Developer Portfolio of Abdul Haleem Mamangcao",
+  description: "Built with Next.js + Tailwind CSS",
 };
 
 export default function RootLayout({ children }) {
