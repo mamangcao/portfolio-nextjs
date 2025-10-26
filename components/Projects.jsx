@@ -6,19 +6,19 @@ export default function Projects() {
       title: "Al-Jalis As-Salih, Inc.",
       desc: "Empowering communities through authentic Islamic education",
       url: "thegoodcompanion.net",
-      href: "#",
+      href: "https://thegoodcompanion.net",
     },
     {
       title: "Portfolio / Creative Resume",
       desc: "Built with Next.js and Tailwind CSS for showcasing creative resume",
       url: "GitHub Repository",
-      href: "#",
+      href: "https://github.com/mamangcao/portfolio-nextjs",
     },
     {
       title: "The Good Companion Academy",
       desc: "A full-stack Laravel + React project for Islamic Center",
       url: "academy.thegoodcompanion.net",
-      href: "#",
+      href: "https://academy.thegoodcompanion.net",
     },
   ];
 
@@ -26,9 +26,12 @@ export default function Projects() {
     <Card title="Projects">
       <div className="grid sm:grid-cols-3 gap-4">
         {projects.map((p) => (
-          <div
+          <a
             key={p.title}
-            className="group relative cursor-pointer bg-gray-50 dark:bg-black rounded-lg border border-gray-200 dark:border-zinc-800 p-3 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 hover:bg-black dark:hover:bg-white"
+            href={p.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative block cursor-pointer bg-gray-50 dark:bg-black rounded-lg border border-gray-200 dark:border-zinc-800 p-3 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 hover:bg-black dark:hover:bg-white"
           >
             <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-white dark:group-hover:text-black transition-colors">
               {p.title}
@@ -37,11 +40,11 @@ export default function Projects() {
               {p.desc}
             </p>
             <div className="mt-2">
-            <span className="text-xs font-mono text-gray-800 dark:text-white border border-gray-200 dark:border-gray-400 bg-white dark:bg-stone-950 px-2 py-1 rounded-full group-hover:border-black dark:group-hover:bg-white dark:group-hover:text-black">
-              {p.url}
-            </span>
+              <span className="text-xs font-mono text-gray-800 dark:text-white border border-gray-200 dark:border-gray-400 bg-white dark:bg-stone-950 px-2 py-1 rounded-full group-hover:border-black dark:group-hover:bg-white dark:group-hover:text-black">
+                {p.url}
+              </span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </Card>

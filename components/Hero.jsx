@@ -46,7 +46,7 @@ export default function Hero() {
         <div className="flex flex-wrap justify-center sm:justify-start items-center gap-3 mt-4">
           <div className="flex items-center gap-2">
             <Link
-              href="https://www.linkedin.com/in/abdulhaleemmamangcao/"
+              href="https://www.linkedin.com/in/abdulhaleemmamangcao"
               target="_blank"
               rel="noopener noreferrer"
               className="transition"
