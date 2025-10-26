@@ -69,7 +69,7 @@ export default function Certifications() {
               className={`group relative flex items-center bg-gray-50 dark:bg-black rounded-lg shadow-sm border border-gray-200 dark:border-zinc-800 hover:-translate-y-0.5 transition p-2 ${
                 isLink
                   ? "cursor-pointer hover:bg-black dark:hover:bg-white"
-                  : "cursor-default hover:bg-gray-100"
+                  : "cursor-default hover:bg-gray-100 dark:hover:bg-zinc-950"
               }`}
             >
               <div className="min-w-0 flex-1">
@@ -84,7 +84,7 @@ export default function Certifications() {
                     <p className="text-xs font-semibold text-black dark:text-white group-hover:text-white dark:group-hover:text-black">
                       {cert.name}
                     </p>
-                    <p className="truncate text-xs font-mono text-gray-600 dark:text-gray-400 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-700">
+                    <p className="truncate text-xs font-mono text-gray-600 dark:text-gray-200 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-700">
                       {cert.issuedby} · {cert.year}
                     </p>
                   </a>
@@ -93,7 +93,7 @@ export default function Certifications() {
                     <p className="text-xs font-semibold text-black dark:text-white">
                       {cert.name}
                     </p>
-                    <p className="truncate text-xs font-mono text-gray-600 dark:text-gray-400 mt-1">
+                    <p className="truncate text-xs font-mono text-gray-600 dark:text-gray-200 mt-1">
                       {cert.issuedby} · {cert.year}
                     </p>
                   </>

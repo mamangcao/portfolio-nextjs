@@ -36,7 +36,7 @@ export default function Projects() {
             <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-white dark:group-hover:text-black transition-colors">
               {p.title}
             </h3>
-            <p className="text-xs lg:text-xs text-gray-600 dark:text-gray-400 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-700 transition-colors">
+            <p className="text-xs lg:text-xs text-gray-600 dark:text-gray-200 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-700 transition-colors">
               {p.desc}
             </p>
             <div className="mt-2">
