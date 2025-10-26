@@ -61,8 +61,8 @@ export default function Experience() {
               <div
                 className={`h-3 w-3 rounded-full ring-2 ring-gray-200 dark:ring-zinc-900 ${
                   idx === 0
-                    ? "bg-white dark:bg-stone-950 group-hover:bg-black dark:group-hover:bg-white transition-colors "
-                    : "bg-white dark:bg-stone-950 group-hover:bg-black dark:group-hover:bg-white group-active:bg-black dark:group-active:bg-white  transition-colors"
+                    ? "bg-white dark:bg-zinc-700 group-hover:bg-black dark:group-hover:bg-white transition-colors"
+                    : "bg-white dark:bg-zinc-700 group-hover:bg-black dark:group-hover:bg-white group-active:bg-black dark:group-active:bg-white  transition-colors"
                 }`}
               />
             </div>
