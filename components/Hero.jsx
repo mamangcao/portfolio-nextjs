@@ -8,9 +8,7 @@ import ThemeToggle from "./ThemeToggle";
 
 export default function Hero() {
   return (
-    <section
-      className="relative text-gray-900 p-4 sm:p-6 md:p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 md:gap-8"
-    >
+    <section className="relative text-gray-900 p-4 sm:p-6 md:p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 md:gap-8">
       <div className="absolute top-4 right-4 md:top-8 md:right-8 z-50">
         <ThemeToggle />
       </div>
@@ -24,9 +22,7 @@ export default function Hero() {
             className="object-cover"
             priority
           />
-          <div
-            className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-green-600/40 via-green-700 to-green-600/40 text-white text-center font-bold text-lg lg:text-sm py-0.5"
-          >
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-green-600/40 via-green-700 to-green-600/40 text-white text-center font-bold text-lg lg:text-sm py-0.5">
             OPEN TO WORK
           </div>
         </div>
@@ -55,7 +51,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="transition"
             >
-              <FaLinkedin className="w-8 h-8 text-gray-700 dark:text-blue-600 hover:text-blue-600 dark:hover:text-white" />
+              <FaLinkedin className="w-8 h-8 text-blue-600 dark:text-white hover:text-blue-800 dark:hover:text-blue-500 hover:-translate-y-0.5" />
             </Link>
 
             <Link
@@ -64,17 +60,27 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="transition"
             >
-              <FaGithub className="w-8 h-8 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white" />
+              <FaGithub className="w-8 h-8 text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200 hover:-translate-y-0.5" />
             </Link>
           </div>
 
-          <button className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+          <a
+            href="https://calendly.com/abdulhaleem-mamangcao/consultation"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition bg-black text-white hover:-translate-y-0.5 hover:shadow-md dark:bg-white dark:text-black"
+          >
             <Calendar size={14} className="sm:w-4 sm:h-4" /> Schedule a Call
-          </button>
+          </a>
 
-          <button className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium border border-gray-300 bg-white hover:bg-gray-100 dark:border-gray-700 dark:hover:text-black dark:hover:bg-white">
+          <a
+            href="https://calendly.com/abdulhaleem-mamangcao/consultation"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium border border-gray-300 bg-white hover:-translate-y-0.5 hover:shadow-md dark:border-gray-700 dark:hover:text-black"
+          >
             <Mail size={14} className="sm:w-4 sm:h-4" /> Send Email
-          </button>
+          </a>
         </div>
       </div>
     </section>

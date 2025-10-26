@@ -15,8 +15,8 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className={`w-12 h-7 flex items-center rounded-full transition-colors duration-300 ${
-        isDark ? "bg-blue-600" : "bg-gray-200"
+      className={`w-12 h-7 flex items-center rounded-full cursor-pointer transition-colors duration-300 ${
+        isDark ? "bg-blue-600 hover:bg-blue-700" : "bg-gray-200 hover:bg-gray-300"
       }`}
     >
       <div

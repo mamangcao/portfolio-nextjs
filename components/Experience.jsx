@@ -4,38 +4,43 @@ export default function Experience() {
   const experiences = [
     {
       title: "Full-stack Web Developer",
-      company: "The Good Companion Academy · Contract",
-      year: "2023",
+      company: "TGC Academy · Contract",
+      year: "2024-2025",
+    },
+    {
+      title: "Academic Tutor",
+      company: "Success Tutoring · Contract",
+      year: "2024-2025",
     },
     {
       title: "Virtual Assistant",
-      company: "Private Client (Confidential) · Freelance",
-      year: "2022",
+      company: "Private Client · Freelance",
+      year: "2022-2022",
     },
     {
       title: "IT Support Specialist",
       company: "MILG - Lanao del Sur · Contract",
-      year: "2021",
+      year: "2020-2021",
     },
     {
       title: "IT Support Specialist",
-      company: "Al-Jalis As-Salih · Contract",
-      year: "2020",
+      company: "Al-Jalis As-Salih, Inc. · Contract",
+      year: "2019-2020",
     },
     {
       title: "Full-stack Web Developer",
-      company: "Al-Jalis As-Salih · Contract",
-      year: "2019",
+      company: "Al-Jalis As-Salih, Inc. · Contract",
+      year: "2018-2019",
     },
     {
       title: "Junior Network Engineer",
       company: "MSU-IIT ICTC-CFSS · Internship",
-      year: "2018",
+      year: "2018-2018",
     },
     {
       title: "Project Manager",
       company: "FabLab Mindanao · Internship",
-      year: "2017",
+      year: "2017-2017",
     },
     {
       title: "Hello World! 👋🏻",
