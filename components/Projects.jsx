@@ -4,19 +4,19 @@ export default function Projects() {
   const projects = [
     {
       title: "Al-Jalis As-Salih, Inc.",
-      desc: "Empowering communities through authentic Islamic education",
+      desc: "Empowering communities through authentic Islamic education.",
       url: "thegoodcompanion.net",
       href: "https://thegoodcompanion.net",
     },
     {
       title: "Portfolio / Creative Resume",
-      desc: "Built with Next.js and Tailwind CSS for showcasing creative resume",
+      desc: "Built with Next.js and Tailwind CSS for showcasing creative resume.",
       url: "GitHub Repository",
       href: "https://github.com/mamangcao/portfolio-nextjs",
     },
     {
       title: "The Good Companion Academy",
-      desc: "A full-stack Laravel + React project for Islamic Center",
+      desc: "A comprehensive academy providing transformative Islamic education.",
       url: "academy.thegoodcompanion.net",
       href: "https://academy.thegoodcompanion.net",
     },
