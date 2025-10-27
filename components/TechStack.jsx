@@ -34,6 +34,7 @@ export default function TechStack() {
       { name: "WordPress", icon: "wordpress" },
     ],
     'Developer Tools': [
+      { name: "git", icon: "git" },
       { name: "GitHub", icon: "github" },
       { name: "VS Code", icon: "vscode" },
     ],
