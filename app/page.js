@@ -20,7 +20,7 @@ export default function Home() {
 
       <section className="max-w-6xl mx-auto px-4 lg:px-36 grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="lg:col-span-2"><AboutMe /></div>
-        <div className="flex flex-col gap-4 lg:gap-4.5">
+        <div className="flex flex-col gap-4 lg:gap-2">
           <Education/>
           <Eligibility/>
           </div>
