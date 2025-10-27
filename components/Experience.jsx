@@ -55,8 +55,8 @@ export default function Experience() {
         {experiences.map((exp, idx) => (
           <li key={idx} className="group relative flex gap-x-4 cursor-default">
             <div
-              className={`absolute left-0 top-0 flex w-6 justify-center ${
-                idx === experiences.length - 1 ? "h-6" : "-bottom-8"
+              className={`absolute left-0 top-1 flex w-6 justify-center ${
+                idx === experiences.length - 1 ? "h-4" : "-bottom-9"
               }`}
             >
               <div className="w-px bg-gray-300 dark:bg-zinc-700 transition-colors" />
@@ -67,7 +67,7 @@ export default function Experience() {
                 className={`h-3 w-3 rounded-full ring-2 ring-gray-200 dark:ring-zinc-900 ${
                   idx === 0
                     ? "bg-white dark:bg-zinc-700 group-hover:bg-black dark:group-hover:bg-white transition-colors"
-                    : "bg-white dark:bg-zinc-700 group-hover:bg-black dark:group-hover:bg-white group-active:bg-black dark:group-active:bg-white  transition-colors"
+                    : "bg-white dark:bg-zinc-700 group-hover:bg-black dark:group-hover:bg-white group-active:bg-black dark:group-active:bg-white transition-colors"
                 }`}
               />
             </div>
@@ -77,7 +77,7 @@ export default function Experience() {
                   <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-white">
                     {exp.title}
                   </h3>
-                  <p className="text-xs lg:text-sm text-gray-500 dark:text-gray-100 group-hover:text-gray-700 dark:group-hover:text-gray-200">
+                  <p className="text-xs text-gray-500 dark:text-gray-100 group-hover:text-gray-700 dark:group-hover:text-gray-200">
                     {exp.company}
                   </p>
                 </div>

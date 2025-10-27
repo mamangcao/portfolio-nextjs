@@ -6,7 +6,6 @@ import TechStack from "@/components/TechStack";
 import Certifications from "@/components/Certifications";
 import Projects from "@/components/Projects";
 import Eligibility from "@/components/Eligibility";
-
 // import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -23,24 +22,34 @@ export default function Home() {
         <AboutMe />
       </section>
 
-      {/* Experience + Side Info */}
-      <section className="max-w-6xl mx-auto px-4 lg:px-36 py-4 grid md:grid-cols-2 gap-3">
-        <div className="md:col-span-1">
+      <section className="max-w-6xl mx-auto px-4 mt-4 lg:px-36 grid gap-3 grid-rows-[repeat(4,auto)] lg:grid-cols-2 lg:auto-rows-auto">
+        {/* Education */}
+        <div className="order-1 lg:row-start-1 lg:col-start-2">
+          <Education />
+        </div>
+
+        {/* Eligibility */}
+        <div className="order-2 lg:row-start-2 lg:col-start-2">
+          <Eligibility />
+        </div>
+
+        {/* Experience */}
+        <div className="order-3 lg:row-start-1 lg:row-end-4 lg:col-start-1">
           <Experience />
         </div>
-        <div className="flex flex-col gap-3">
-          <Education />
-          <Eligibility />
+
+        {/* Tech Stack */}
+        <div className="order-4 lg:row-start-3 lg:col-start-2">
           <TechStack />
         </div>
       </section>
 
       {/* Projects */}
-      <section className="max-w-6xl mx-auto px-4 lg:px-36 py-4">
+      <section className="max-w-6xl mx-auto px-4 lg:px-36 mt-3 lg:mt-1">
         <Projects />
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 lg:px-36">
+      <section className="max-w-6xl mx-auto px-4 lg:px-36 py-3 lg:py-4">
         <Certifications />
       </section>
 
