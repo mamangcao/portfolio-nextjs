@@ -13,7 +13,7 @@ export default function Hero() {
         <ThemeToggle />
       </div>
 
-      <div className="relative flex justify-center sm:justify-start flex-shrink-0">
+      <div className="relative flex justify-center sm:justify-start flex-shrink-0 fade-in-up">
         <div className="relative rounded-xl overflow-hidden w-[250px] h-[250px] sm:w-[140px] sm:h-[140px] md:w-[160px] md:h-[160px]">
           <Image
             src="/profile.png"
@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="flex-1 text-center sm:text-left">
+      <div className="flex-1 text-center sm:text-left fade-in-up">
         <h1 className="text-lg sm:text-xl md:text-2xl dark:text-white font-bold flex items-center justify-center sm:justify-start gap-2">
           Abdul Haleem Mamangcao
           <CheckBadgeIcon className="w-5 h-5 sm:w-5 sm:h-5 text-blue-500" />

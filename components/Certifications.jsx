@@ -35,6 +35,11 @@ const certificate = [
     year: "40 hrs · 2023",
   },
   {
+    name: "iDEYA HACK: Health Edition Finalist",
+    issuedby: "iDEYA Center",
+    year: "36 hrs · 2017",
+  },
+  {
     name: "CCNA R&S: Connecting Networks",
     issuedby: "CISCO Networking Academy",
     year: "2017",

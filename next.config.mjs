@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  images: {
+    domains: ['vitejs.dev', 'headlessui.com'],
+  },
 };
 
 export default nextConfig;

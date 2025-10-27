@@ -16,7 +16,7 @@ export default function Card({ title, children }) {
   const icon = icons[title] || <Info className="w-4 h-4 text-gray-400" />;
 
   return (
-    <div className="border bg-white dark:bg-stone-950 border-gray-200 dark:border-zinc-700 text-gray-900 dark:text-white shadow-sm rounded-xl p-6 md:p-4 hover:shadow-lg hover:-translate-y-0.5 transition">
+    <div className="border bg-white dark:bg-stone-950 border-gray-200 dark:border-zinc-700 text-gray-900 dark:text-white shadow-sm rounded-xl p-6 md:p-4 hover:shadow-lg hover:-translate-y-0.5 transition fade-in-up">
       {title && (
         <h2 className="text-sm md:text-base font-bold mb-3 flex items-center gap-2">
           {icon}

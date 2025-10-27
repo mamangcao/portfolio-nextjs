@@ -7,8 +7,21 @@ export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
+  // Wait until mounted (to avoid hydration mismatch)
+  useEffect(() => {
+    const t = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(t);
+  }, []);
+
+  if (!mounted) {
+    // Render a static placeholder button to match SSR
+    return (
+      <button
+        className="w-12 h-7 flex items-center rounded-full cursor-pointer transition-colors duration-300 bg-gray-200"
+        aria-label="Toggle theme"
+      />
+    );
+  }
 
   const isDark = theme === "dark";
 
@@ -16,8 +29,11 @@ export default function ThemeToggle() {
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
       className={`w-12 h-7 flex items-center rounded-full cursor-pointer transition-colors duration-300 ${
-        isDark ? "bg-blue-600 hover:bg-blue-700" : "bg-gray-200 hover:bg-gray-300"
+        isDark
+          ? "bg-blue-600 hover:bg-blue-700"
+          : "bg-gray-200 hover:bg-gray-300"
       }`}
+      aria-label="Toggle theme"
     >
       <div
         className={`w-5 h-5 bg-white dark:text-black rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center ${
