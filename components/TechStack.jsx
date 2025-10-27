@@ -60,7 +60,7 @@ export default function TechStack() {
               {techs.map((t) => (
                 <div
                   key={t.name}
-                  className="relative group flex items-center justify-center w-7 h-7 lg:w-7 lg:h-7"
+                  className="relative group flex items-center justify-center w-7 h-7 lg:w-10 lg:h-10"
                 >
                   {t.icon === "vitejs" ? (
                     <Image

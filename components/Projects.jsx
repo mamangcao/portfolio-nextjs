@@ -31,7 +31,7 @@ export default function Projects() {
             href={p.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative block cursor-pointer bg-gray-50 dark:bg-black rounded-lg border border-gray-200 dark:border-zinc-800 p-3 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 hover:bg-black dark:hover:bg-white"
+            className="group relative block cursor-pointer bg-gray-50 dark:bg-black rounded-xl border border-gray-200 dark:border-zinc-800 p-3 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 hover:bg-black dark:hover:bg-white"
           >
             <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-white dark:group-hover:text-black transition-colors">
               {p.title}

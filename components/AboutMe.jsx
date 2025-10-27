@@ -9,13 +9,13 @@ export default function AboutCard() {
         React, and Tailwind CSS, and I love turning creative ideas into
         functional, clean, and efficient code.
       </p>
-      <p className="mt-2 text-justify">
+      <p className="mt-1 text-justify">
         I’m constantly learning and improving, whether it’s optimizing backend
         logic, designing intuitive front-end interfaces, or collaborating on
         full-stack projects. My goal is to grow as a developer by contributing
         to meaningful projects and delivering real value through technology.
       </p>
-      <p className="mt-2 text-justify">
+      <p className="mt-1 text-justify">
         I’m currently open to remote or online opportunities where I can apply
         my skills, learn from experienced teams, and continue to grow in the
         field of web development.

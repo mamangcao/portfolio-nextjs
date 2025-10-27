@@ -36,8 +36,9 @@ const certificate = [
   },
   {
     name: "iDEYA HACK: Health Edition Finalist",
-    issuedby: "iDEYA Center",
+    issuedby: "iDEYA: CIT @ MSU-IIT",
     year: "36 hrs · 2017",
+    href: "https://medium.com/@ideya.cit/ideyahack-launched-2nd-edition-focused-on-health-60ffa4823ad8",
   },
   {
     name: "CCNA R&S: Connecting Networks",
