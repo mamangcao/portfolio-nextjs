@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import Card from "./Card";
 
 export default function Projects() {
@@ -33,9 +34,12 @@ export default function Projects() {
             rel="noopener noreferrer"
             className="group relative block cursor-pointer bg-gray-50 dark:bg-black rounded-xl border border-gray-200 dark:border-zinc-800 p-3 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 hover:bg-black dark:hover:bg-white"
           >
-            <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-white dark:group-hover:text-black transition-colors">
-              {p.title}
-            </h3>
+            <div className="flex items-start justify-between gap-2">
+              <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-white dark:group-hover:text-black transition-colors">
+                {p.title}
+              </h3>
+              <ArrowUpRight className="size-5 text-gray-700 dark:text-gray-200 group-hover:text-white dark:group-hover:text-black group-hover:-translate-y-2 group-hover:translate-x-2 transition-all flex-shrink-0" />
+            </div>
             <p className="text-xs text-gray-600 dark:text-gray-200 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-700 transition-colors">
               {p.desc}
             </p>
