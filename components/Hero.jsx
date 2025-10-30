@@ -7,6 +7,9 @@ import { CheckBadgeIcon } from "@heroicons/react/24/solid";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Hero() {
+  const handleContextMenu = (e) => {
+    e.preventDefault(); // Prevent right-click
+  };
   return (
     <section className="relative text-gray-900 p-4 sm:p-6 md:p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 md:gap-8">
       <div className="absolute top-4 right-4 md:top-8 md:right-8 z-50">
@@ -18,6 +21,7 @@ export default function Hero() {
           <Image
             src="/profile.png"
             alt="Profile"
+            onContextMenu={handleContextMenu}
             fill
             className="object-cover"
             priority
