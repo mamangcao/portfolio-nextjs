@@ -3,7 +3,7 @@ import Card from "./Card";
 export default function Experience() {
   const experiences = [
     {
-      title: "Full-stack Web Developer",
+      title: "Full-Stack Web Developer",
       company: "TGC Academy · Contract",
       year: "2024-2025",
     },
@@ -28,7 +28,7 @@ export default function Experience() {
       year: "2019-2020",
     },
     {
-      title: "Full-stack Web Developer",
+      title: "Full-Stack Web Developer",
       company: "Al-Jalis As-Salih, Inc. · Contract",
       year: "2018-2019",
     },
