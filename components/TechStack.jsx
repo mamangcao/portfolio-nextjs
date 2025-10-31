@@ -9,7 +9,6 @@ export default function TechStack() {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  // Ensure theme is loaded on the client
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 0);
     return () => clearTimeout(t);

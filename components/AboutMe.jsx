@@ -4,17 +4,10 @@ export default function AboutCard() {
   return (
     <Card title="About Me">
       <p className="text-justify">
-        I’m a Full-stack developer passionate about building responsive, modern,
-        and user-friendly web applications. My core stack includes Laravel,
-        React, and Tailwind CSS, and I love turning creative ideas into
-        functional, clean, and efficient code.
+        An enthusiastic Junior Full-Stack Web Developer with hands-on experience building web applications using Laravel, React, Tailwind CSS, and MySQL. Passionate about improving my skills in both front-end and back-end development. Over a year of experience building complete web applications independently.
       </p>
       <p className="mt-5 text-justify">
-        I’m constantly learning and improving, whether it’s optimizing backend
-        logic, designing intuitive front-end interfaces, or collaborating on
-        full-stack projects. My goal is to grow as a developer by contributing
-        to meaningful projects and delivering real value through technology. I’m
-        currently open to remote or online opportunities where I can continue to grow in the field.
+        I’m now looking for opportunities to join a team environment, learn from experienced developers, and contribute to real-world projects. I focus on writing clean, maintainable code, creating responsive and user-friendly interfaces, and continuously improving my skills.
       </p>
     </Card>
   );

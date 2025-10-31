@@ -7,14 +7,12 @@ export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  // Wait until mounted (to avoid hydration mismatch)
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 0);
     return () => clearTimeout(t);
   }, []);
 
   if (!mounted) {
-    // Render a static placeholder button to match SSR
     return (
       <button
         className="w-12 h-7 flex items-center rounded-full cursor-pointer transition-colors duration-300 bg-gray-200"
