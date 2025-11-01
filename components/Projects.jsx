@@ -38,7 +38,7 @@ export default function Projects() {
               <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-white dark:group-hover:text-black transition-colors">
                 {p.title}
               </h3>
-              <ArrowUpRight className="size-5 text-gray-700 dark:text-gray-200 group-hover:text-white dark:group-hover:text-black group-hover:-translate-y-2 group-hover:translate-x-2 transition-all flex-shrink-0" />
+              <ArrowUpRight className="size-4 lg:size-5 text-gray-700 dark:text-gray-200 group-hover:text-white dark:group-hover:text-black group-hover:-translate-y-2 group-hover:translate-x-2 transition-all flex-shrink-0" />
             </div>
             <p className="text-xs text-gray-600 dark:text-gray-200 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-700 transition-colors">
               {p.desc}
