@@ -1,4 +1,5 @@
 import Card from "./Card";
+import { ArrowUpRight } from "lucide-react";
 
 const certificate = [
   {
@@ -35,7 +36,7 @@ const certificate = [
     year: "40 hrs · 2023",
   },
   {
-    name: "iDEYA HACK: Health Edition Finalist",
+    name: "iDEYAHACK: Health Edition Finalist",
     issuedby: "iDEYA: CIT @ MSU-IIT",
     year: "36 hrs · 2017",
     href: "https://medium.com/@ideya.cit/ideyahack-launched-2nd-edition-focused-on-health-60ffa4823ad8",
@@ -86,9 +87,12 @@ export default function Certifications() {
                     className="focus:outline-hidden"
                   >
                     <span aria-hidden="true" className="absolute inset-0" />
-                    <p className="text-xs font-semibold text-black dark:text-white group-hover:text-white dark:group-hover:text-black">
-                      {cert.name}
-                    </p>
+                    <div className="flex items-start justify-between">
+                      <p className="text-xs font-semibold text-black dark:text-white group-hover:text-white dark:group-hover:text-black">
+                        {cert.name}
+                      </p>
+                      <ArrowUpRight className="size-4 text-gray-700 dark:text-gray-200 group-hover:text-white dark:group-hover:text-black group-hover:-translate-y-2 group-hover:translate-x-2 transition-all flex-shrink-0" />
+                    </div>
                     <p className="truncate text-xs font-mono text-gray-600 dark:text-gray-200 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-700">
                       {cert.issuedby} · {cert.year}
                     </p>
