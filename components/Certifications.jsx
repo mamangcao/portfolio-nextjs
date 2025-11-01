@@ -65,7 +65,7 @@ const certificate = [
 
 export default function Certifications() {
   return (
-    <Card title="Certifications">
+    <Card title="Certifications" viewAllLink="#">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
         {certificate.map((cert) => {
           const isLink = Boolean(cert.href);
