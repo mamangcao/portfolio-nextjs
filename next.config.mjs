@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['vitejs.dev', 'headlessui.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'vitejs.dev',
+      },
+      {
+        protocol: 'https',
+        hostname: 'headlessui.com',
+      },
+    ],
   },
 };
 
