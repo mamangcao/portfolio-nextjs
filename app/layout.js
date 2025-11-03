@@ -30,7 +30,9 @@ export const metadata = {
     "Backend Developer",
     "Next.js Developer",
   ],
-  authors: [{ name: "Abdul Haleem Mamangcao", url: "https://mamangcao.vercel.app" }],
+  authors: [
+    { name: "Abdul Haleem Mamangcao", url: "https://mamangcao.vercel.app" },
+  ],
   creator: "Abdul Haleem Mamangcao",
   publisher: "Abdul Haleem Mamangcao",
   icons: {
@@ -57,6 +59,8 @@ export default function RootLayout({ children }) {
           enableSystem={false}
         >
           {children}
+          <SpeedInsights />
+          <Analytics />
         </ThemeProvider>
         <SpeedInsights />
       </body>
