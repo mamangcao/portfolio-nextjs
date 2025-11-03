@@ -2,6 +2,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   subsets: ["latin"],
