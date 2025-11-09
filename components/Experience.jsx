@@ -81,7 +81,7 @@ export default function Experience() {
                     {exp.company}
                   </p>
                 </div>
-                <span className="text-xs font-mono text-gray-800 dark:text-white border border-gray-200 bg-white dark:bg-stone-950 px-2 py-0.5 rounded-full group-hover:border-black dark:group-hover:border-white">
+                <span className="text-xs font-mono text-gray-800 dark:text-white border border-gray-200 bg-white dark:bg-midnight-100 px-2 py-0.5 rounded-full group-hover:border-black dark:group-hover:border-white">
                   {exp.year}
                 </span>
               </div>

@@ -1,7 +1,12 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
- @keyframes fadeInUp {
+@theme {
+  --color-midnight-50: #171717;
+  --color-midnight-100: #0F0F0F;
+}
+
+@keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(10px);
@@ -15,4 +20,3 @@
 .fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
 }
-

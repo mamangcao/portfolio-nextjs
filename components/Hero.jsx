@@ -19,11 +19,19 @@ export default function Hero() {
       <div className="relative flex justify-center sm:justify-start flex-shrink-0 fade-in-up">
         <div className="relative rounded-xl overflow-hidden w-[250px] h-[250px] sm:w-[140px] sm:h-[140px] md:w-[160px] md:h-[160px]">
           <Image
-            src="/profile.png"
+            src="/profile-light.jpg"
             alt="Profile"
             onContextMenu={handleContextMenu}
             fill
-            className="object-cover"
+            className="object-cover dark:hidden"
+            priority
+          />
+          <Image
+            src="/profile-dark.jpg"
+            alt="Profile"
+            onContextMenu={handleContextMenu}
+            fill
+            className="object-cover hidden dark:block"
             priority
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-green-600/40 via-green-700 to-green-600/40 text-white text-center font-bold text-lg lg:text-sm py-0.5">
@@ -72,7 +80,7 @@ export default function Hero() {
             href="https://calendly.com/abdulhaleem-mamangcao/consultation"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition bg-black text-white hover:-translate-y-0.5 hover:shadow-md dark:bg-white dark:text-black"
+            className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition bg-midnight-100 text-white hover:-translate-y-0.5 hover:shadow-md dark:bg-white dark:text-black"
           >
             <Calendar size={14} className="sm:w-4 sm:h-4" /> Schedule a Call
           </a>

@@ -65,16 +65,16 @@ const certificate = [
 
 export default function Certifications() {
   return (
-    <Card title="Certifications" viewAllLink="#">
+    <Card title="Recent Certifications" viewAllLink="#">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
         {certificate.map((cert) => {
           const isLink = Boolean(cert.href);
           return (
             <div
               key={cert.name}
-              className={`group relative flex items-center bg-gray-50 dark:bg-black rounded-lg shadow-sm border border-gray-200 dark:border-zinc-800 hover:-translate-y-0.5 transition p-2 ${
+              className={`group relative flex items-center bg-gray-50 dark:bg-midnight-100 rounded-lg shadow-sm border border-gray-200 dark:border-zinc-800 hover:-translate-y-0.5 transition p-2 ${
                 isLink
-                  ? "cursor-pointer hover:bg-black dark:hover:bg-white"
+                  ? "cursor-pointer hover:bg-midnight-100 dark:hover:bg-white"
                   : "cursor-default hover:bg-gray-100 dark:hover:bg-zinc-950"
               }`}
             >
@@ -93,7 +93,7 @@ export default function Certifications() {
                       </p>
                       <ArrowUpRight className="size-4 text-gray-700 dark:text-gray-200 group-hover:text-white dark:group-hover:text-black group-hover:-translate-y-2 group-hover:translate-x-2 transition-all flex-shrink-0" />
                     </div>
-                    <p className="truncate text-xs font-mono text-gray-600 dark:text-gray-200 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-700">
+                    <p className="truncate text-xs font-mono text-gray-600 dark:text-gray-200 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-900">
                       {cert.issuedby} · {cert.year}
                     </p>
                   </a>
