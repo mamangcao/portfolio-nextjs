@@ -32,19 +32,19 @@ export default function Projects() {
             href={p.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative block cursor-pointer bg-gray-50 dark:bg-midnight-100 rounded-xl border border-gray-200 dark:border-zinc-800 p-3 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 hover:bg-midnight-100 dark:hover:bg-white"
+            className="group relative block cursor-pointer bg-gray-50 dark:bg-midnight-100 rounded-xl border border-gray-200 dark:border-zinc-800 p-3 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 "
           >
             <div className="flex items-start justify-between gap-2">
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-white dark:group-hover:text-black transition-colors">
+              <h3 className="text-sm font-semibold text-gray-900 dark:text-white transition-colors">
                 {p.title}
               </h3>
-              <ArrowUpRight className="size-4 lg:size-5 text-gray-700 dark:text-gray-200 group-hover:text-white dark:group-hover:text-black group-hover:-translate-y-2 group-hover:translate-x-2 transition-all flex-shrink-0" />
+              <ArrowUpRight className="size-4 lg:size-5 text-gray-700 dark:text-gray-200 group-hover:-translate-y-2 group-hover:translate-x-2 transition-all flex-shrink-0" />
             </div>
-            <p className="text-xs text-gray-600 dark:text-gray-200 mt-1 group-hover:text-gray-200 dark:group-hover:text-gray-700 transition-colors">
+            <p className="text-xs text-gray-600 dark:text-gray-200 mt-1 transition-colors">
               {p.desc}
             </p>
             <div className="mt-2">
-              <span className="text-xs font-mono text-gray-800 dark:text-white border border-gray-200 dark:border-gray-400 bg-white dark:bg-midnight-100 px-2 py-1 rounded-full group-hover:border-black dark:group-hover:bg-white dark:group-hover:text-black">
+              <span className="text-xs font-mono text-gray-800 dark:text-white border border-gray-300 dark:border-gray-400 bg-white dark:bg-midnight-100 px-2 py-1 rounded-full group-hover:bg-midnight-100 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black">
                 {p.url}
               </span>
             </div>
