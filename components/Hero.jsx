@@ -52,7 +52,7 @@ export default function Hero() {
         </p>
 
         <p className="text-sm sm:text-base mt-3 text-gray-700 dark:text-gray-100">
-          Full-stack Web Developer / IT Support Specialist
+          Full-Stack Web Developer / IT Support Specialist
         </p>
 
         <div className="flex flex-wrap justify-center sm:justify-start items-center gap-3 mt-4">
