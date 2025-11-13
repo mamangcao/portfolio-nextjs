@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const certificate = [
   {
-    name: "Networking Devices & Initial Configuration",
+    name: "Networking Devices & Initial Config.",
     issuedby: "CISCO NetAcad",
     year: "22 hrs · 2024",
     href: "https://www.credly.com/badges/d8c5f4f5-f93e-4d19-bc64-1eff2edd4024/public_url",

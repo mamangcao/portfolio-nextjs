@@ -7,6 +7,7 @@ import Certifications from "@/components/Certifications";
 import Projects from "@/components/Projects";
 import Eligibility from "@/components/Eligibility";
 import Hackathon from "@/components/Hackathon";
+import BeyondCoding from "@/components/BeyondCoding";
 // import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -27,10 +28,13 @@ export default function Home() {
       </section>
 
       <section className="max-w-6xl mx-auto px-4 lg:px-36 py-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div><Experience /></div>
+        <div className="flex flex-col gap-4">
+          <Experience />
+          </div>
         <div className="flex flex-col gap-4">
           <Hackathon/>
           <TechStack/>
+          <BeyondCoding/>
           </div>
       </section>
 

@@ -4,6 +4,11 @@ export default function Experience() {
   const experiences = [
     {
       title: "Full-Stack Web Developer",
+      company: "Freelance",
+      year: "2025-Present",
+    },
+    {
+      title: "Full-Stack Web Developer",
       company: "TGC Academy · Contract",
       year: "2024-2025",
     },
@@ -66,7 +71,7 @@ export default function Experience() {
               <div
                 className={`h-3 w-3 rounded-full ring-2 ring-gray-200 dark:ring-zinc-900 ${
                   idx === 0
-                    ? "bg-white dark:bg-zinc-700 group-hover:bg-black dark:group-hover:bg-white transition-colors"
+                    ? "bg-black dark:bg-white group-hover:bg-black dark:group-hover:bg-white transition-colors"
                     : "bg-white dark:bg-zinc-700 group-hover:bg-black dark:group-hover:bg-white group-active:bg-black dark:group-active:bg-white transition-colors"
                 }`}
               />
@@ -81,7 +86,7 @@ export default function Experience() {
                     {exp.company}
                   </p>
                 </div>
-                <span className="text-xs font-mono text-gray-800 dark:text-white border border-gray-200 bg-white dark:bg-midnight-100 px-2 py-0.5 rounded-full group-hover:border-black dark:group-hover:border-white">
+                <span className="text-[10px] lg:text-xs font-mono text-gray-800 dark:text-white border border-gray-200 bg-white dark:bg-midnight-100 px-2 py-0.5 rounded-full group-hover:border-black dark:group-hover:border-white">
                   {exp.year}
                 </span>
               </div>

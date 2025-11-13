@@ -1,18 +1,11 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { Geist, Geist_Mono } from "next/font/google";
 
-const geistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
-});
+const geist = Geist({ subsets: ["latin"] });
+const geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Abdul Haleem Mamangcao | Full-stack Developer",
@@ -37,7 +30,7 @@ export const metadata = {
   publisher: "Abdul Haleem Mamangcao",
   icons: {
     icon: [
-      { url: "/icon.ico" }, // default desktop favicon
+      { url: "/icon.ico" },
       { url: "/profile.png", sizes: "192x192", type: "image/png" },
       { url: "/profile.png", sizes: "512x512", type: "image/png" },
     ],
@@ -50,9 +43,8 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body className="font-sans">
+      <body className={geist.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -62,7 +54,6 @@ export default function RootLayout({ children }) {
           <SpeedInsights />
           <Analytics />
         </ThemeProvider>
-        <SpeedInsights />
       </body>
     </html>
   );
