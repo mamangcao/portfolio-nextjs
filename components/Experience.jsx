@@ -5,7 +5,7 @@ export default function Experience() {
     {
       title: "Full-Stack Web Developer",
       company: "Freelance",
-      year: "2025-Present",
+      year: "2025",
     },
     {
       title: "Full-Stack Web Developer",
