@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-midnight-50: #171717;
+  --color-midnight-100: #0F0F0F;
+}
+
 @layer base {
   :root {
     --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --font-family-caveat: "Caveat", cursive;
-    --color-midnight-50: #171717;
-    --color-midnight-100: #0F0F0F;
   }
 }
 
