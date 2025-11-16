@@ -4,6 +4,12 @@ import StackIcon from "tech-stack-icons";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/global-tooltip";
 
 export default function TechStack() {
   const { theme } = useTheme();
@@ -25,19 +31,20 @@ export default function TechStack() {
       { name: "PostgreSQL", icon: "postgresql" },
     ],
     Frontend: [
-      { name: "Javascipt", icon: "js" },
-      { name: "Typescript", icon: "typescript" },
+      { name: "JavaScript", icon: "js" },
+      { name: "TypeScript", icon: "typescript" },
       { name: "React", icon: "react" },
       { name: "Next.js", icon: "nextjs2" },
       { name: "Vue.js", icon: "vuejs" },
       { name: "Tailwind CSS", icon: "tailwindcss" },
+      { name: "Shadcn UI", icon: "shadcnui" },
       { name: "Headless UI", icon: "headlessui" },
+      { name: "Motion.dev", icon: "motiondev" },
       { name: "Vite", icon: "vitejs" },
       { name: "HTML", icon: "html5" },
       { name: "CSS", icon: "css3" },
       { name: "Bootstrap", icon: "bootstrap5" },
       { name: "Material UI", icon: "materialui" },
-      { name: "Webpack", icon: "webpack" },
       { name: "ESLint", icon: "eslint" },
       { name: "Prettier", icon: "prettier" },
     ],
@@ -50,52 +57,59 @@ export default function TechStack() {
   };
 
   return (
-    <Card title="Tech Stack">
-      <div className="space-y-5.5">
-        {Object.entries(stacks).map(([category, techs]) => (
-          <div key={category}>
-            <h3 className="text-sm font-semibold mb-2">{category}</h3>
-            <div className="flex flex-wrap gap-4">
-              {techs.map((t) => (
-                <div
-                  key={t.name}
-                  className="relative group flex items-center justify-center w-7 h-7 lg:w-8 lg:h-8"
-                >
-                  {t.icon === "vitejs" ? (
-                    <Image
-                      src="https://vitejs.dev/logo.svg"
-                      alt="Vite"
-                      width={36}
-                      height={36}
-                      className="transition-transform duration-200 group-hover:scale-110"
-                    />
-                  ) : t.icon === "headlessui" ? (
-                    <Image
-                      src="https://headlessui.com/apple-touch-icon.png"
-                      alt="Headless UI"
-                      width={36}
-                      height={36}
-                      className="transition-transform duration-200 group-hover:scale-110"
-                    />
-                  ) : (
-                    <StackIcon
-                      name={t.icon}
-                      variant={currentTheme === "dark" ? "dark" : "light"}
-                      className={`transition-transform duration-200 group-hover:scale-110 ${
-                        currentTheme === "dark" ? "brightness-125" : ""
-                      }`}
-                    />
-                  )}
-
-                  <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 text-xs bg-gray-800 text-white dark:bg-white dark:text-black px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-                    {t.name}
-                  </span>
-                </div>
-              ))}
+    <Card title="Tech Stack" viewAllLink="">
+      <TooltipProvider>
+        <div className="space-y-5.5">
+          {Object.entries(stacks).map(([category, techs]) => (
+            <div key={category}>
+              <h3 className="text-sm font-semibold mb-2">{category}</h3>
+              <div className="flex flex-wrap gap-4">
+                {techs.map((t) => (
+                  <Tooltip key={t.name} sideOffset={8}>
+                    <TooltipTrigger>
+                      <div className="flex items-center justify-center w-7 h-7 lg:w-8 lg:h-8 transition-transform duration-200 hover:scale-110">
+                        {t.icon === "vitejs" ? (
+                          <Image
+                            src="https://vitejs.dev/logo.svg"
+                            alt="Vite"
+                            width={36}
+                            height={36}
+                          />
+                        ) : t.icon === "headlessui" ? (
+                          <Image
+                            src="https://headlessui.com/apple-touch-icon.png"
+                            alt="Headless UI"
+                            width={36}
+                            height={36}
+                          />
+                        ) : t.icon === "motiondev" ? (
+                          <Image
+                            src={
+                              currentTheme === "dark"
+                                ? "https://cdn.brandfetch.io/idDJv1mfrb/theme/light/logo.svg"
+                                : "https://cdn.brandfetch.io/idDJv1mfrb/theme/dark/logo.svg"
+                            }
+                            alt="Motion.dev"
+                            width={36}
+                            height={36}
+                          />
+                        ) : (
+                          <StackIcon
+                            name={t.icon}
+                            variant={currentTheme === "dark" ? "dark" : "light"}
+                            className={currentTheme === "dark" ? "brightness-125" : ""}
+                          />
+                        )}
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent>{t.name}</TooltipContent>
+                  </Tooltip>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </TooltipProvider>
     </Card>
   );
 }

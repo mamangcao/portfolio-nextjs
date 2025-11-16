@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'headlessui.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'motion.dev',
+      },
     ],
   },
 };

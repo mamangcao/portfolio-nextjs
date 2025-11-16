@@ -75,7 +75,7 @@ export default function Certifications() {
               className={`group relative flex items-center bg-gray-50 dark:bg-midnight-100 rounded-lg shadow-sm border border-gray-200 dark:border-zinc-800 hover:-translate-y-0.5 transition p-2 ${
                 isLink
                   ? "cursor-pointer hover:bg-midnight-100 dark:hover:bg-white"
-                  : "cursor-default hover:bg-gray-100 dark:hover:bg-zinc-950"
+                  : "cursor-default hover:bg-gray-100 dark:hover:bg-midnight-100"
               }`}
             >
               <div className="min-w-0 flex-1">
