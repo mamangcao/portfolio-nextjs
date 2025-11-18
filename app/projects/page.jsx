@@ -35,6 +35,7 @@ const techIconMap = {
   wordpress: "wordpress",
   vscode: "vscode",
   sublime: "sublime",
+  vercel: "vercel",
 };
 
 export default function ProjectsPage() {
@@ -78,8 +79,8 @@ export default function ProjectsPage() {
                     <Image
                       src="https://vitejs.dev/logo.svg"
                       alt="Vite"
-                      width={24}
-                      height={24}
+                      width={28}
+                      height={28}
                     />
                   ) : tech === "headlessui" ? (
                     <Image
@@ -96,8 +97,8 @@ export default function ProjectsPage() {
                           : "https://cdn.brandfetch.io/idDJv1mfrb/theme/dark/logo.svg"
                       }
                       alt="Motion.dev"
-                      width={24}
-                      height={24}
+                      width={28}
+                      height={28}
                     />
                   ) : (
                     <StackIcon
@@ -224,7 +225,7 @@ export default function ProjectsPage() {
                                 href={project.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group inline-flex items-start gap-1.5 text-sm font-bold text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-yellow-200 transition-colors"
+                                className="group inline-flex items-start gap-1.5 text-sm text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-yellow-200 transition-colors"
                               >
                                 <span>{project.title}</span>
                                 <ArrowUpRight className="size-4 text-gray-400 dark:text-gray-200 flex-shrink-0 mt-0.5 transition-transform group-hover:text-purple-600 dark:group-hover:text-yellow-200 group-hover:-translate-y-1 group-hover:translate-x-1" />

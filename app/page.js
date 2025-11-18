@@ -14,7 +14,6 @@ export default function Home() {
   const year = new Date().getFullYear();
   return (
     <main className="min-h-screen text-gray-900">
-      {/* Hero Section */}
       <section className="max-w-6xl mx-auto lg:px-28">
         <Hero />
       </section>
@@ -38,7 +37,6 @@ export default function Home() {
           </div>
       </section>
 
-      {/* Projects */}
       <section className="max-w-6xl mx-auto px-4 lg:px-36">
         <Projects />
       </section>

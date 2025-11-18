@@ -23,7 +23,7 @@ export default function CertificationsPage() {
         <div className="mt-6 sm:mt-8 flow-root">
           <div className="-mx-4 -my-2 sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-              {/* Desktop Table */}
+              {/* Desktop */}
               <table className="hidden min-w-full divide-y divide-gray-300 dark:divide-zinc-800 md:table">
                 <thead className="bg-white dark:bg-midnight-50 sticky top-0 z-10">
                   <tr>
@@ -85,7 +85,7 @@ export default function CertificationsPage() {
                 </tbody>
               </table>
 
-              {/* Mobile Card List */}
+              {/* Mobile  */}
               <div className="md:hidden">
                 <div className="sticky top-0 z-10 bg-white dark:bg-midnight-50 border-b border-gray-300 dark:border-zinc-800 px-4 py-3 mb-2">
                   <div className="flex items-center gap-x-3 text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide">
