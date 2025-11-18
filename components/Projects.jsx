@@ -24,7 +24,7 @@ export default function Projects() {
   ];
 
   return (
-    <Card title="Recent Projects">
+    <Card title="Recent Projects" viewAllLink="/projects">
       <div className="grid sm:grid-cols-3 gap-4">
         {projects.map((p) => (
           <a

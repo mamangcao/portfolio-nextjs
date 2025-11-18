@@ -35,37 +35,11 @@ const certificate = [
     issuedby: "DICT Region 10 - ILCDB",
     year: "40 hrs · 2023",
   },
-  {
-    name: "iDEYAHACK: Health Edition Finalist",
-    issuedby: "iDEYA: CIT @ MSU-IIT",
-    year: "36 hrs · 2017",
-    href: "https://medium.com/@ideya.cit/ideyahack-launched-2nd-edition-focused-on-health-60ffa4823ad8",
-  },
-  {
-    name: "CCNA R&S: Connecting Networks",
-    issuedby: "CISCO Networking Academy",
-    year: "2017",
-  },
-  {
-    name: "CCNA R&S: Scaling Networks",
-    issuedby: "CISCO Networking Academy",
-    year: "2017",
-  },
-  {
-    name: "CCNA R&S: Routing and Switching Essentials",
-    issuedby: "CISCO Networking Academy",
-    year: "2017",
-  },
-  {
-    name: "CCNA R&S: Introduction to Networks",
-    issuedby: "CISCO Networking Academy",
-    year: "2016",
-  },
 ];
 
 export default function Certifications() {
   return (
-    <Card title="Recent Certifications" viewAllLink="#">
+    <Card title="Recent Certifications" viewAllLink="/certifications">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
         {certificate.map((cert) => {
           const isLink = Boolean(cert.href);

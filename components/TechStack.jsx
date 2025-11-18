@@ -65,7 +65,7 @@ export default function TechStack() {
               <h3 className="text-sm font-semibold mb-2">{category}</h3>
               <div className="flex flex-wrap gap-4">
                 {techs.map((t) => (
-                  <Tooltip key={t.name} sideOffset={8}>
+                  <Tooltip key={t.name} sideOffset={12}>
                     <TooltipTrigger>
                       <div className="flex items-center justify-center w-7 h-7 lg:w-8 lg:h-8 transition-transform duration-200 hover:scale-110">
                         {t.icon === "vitejs" ? (

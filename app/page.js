@@ -8,7 +8,7 @@ import Projects from "@/components/Projects";
 import Eligibility from "@/components/Eligibility";
 import Hackathon from "@/components/Hackathon";
 import BeyondCoding from "@/components/BeyondCoding";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const year = new Date().getFullYear();
@@ -47,11 +47,9 @@ export default function Home() {
         <Certifications />
       </section>
 
-      {/* Footer */}
-      <footer className="max-w-6xl mx-auto px-4 lg:px-36 text-black dark:text-white text-xs lg:text-sm py-8 text-center">
-        <div className="border-t border-gray-300 mt-4 mb-4"></div>© {year} Abdul
-        Haleem Mamangcao. All rights reserved.
-      </footer>
+      <section>
+        <Footer />
+      </section>
     </main>
   );
 }
