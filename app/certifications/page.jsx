@@ -16,7 +16,7 @@ export default function CertificationsPage() {
             <MoveLeft className="w-5 h-5 text-gray-700 dark:text-gray-200 group-hover:text-purple-500 dark:group-hover:text-yellow-200 group-hover:-translate-x-2 transition-transform" />
             <span className="font-medium text-gray-700 dark:text-gray-200 group-hover:text-purple-700 dark:group-hover:text-yellow-200">Abdul Haleem Mamangcao</span>
           </Link>
-          <h1 className="text-3xl text-midnight-100 dark:text-white sm:text-4xl font-bold mb-8">
+          <h1 className="text-4xl text-midnight-100 dark:text-white font-bold mb-8">
             All Certifications
           </h1>
         </div>

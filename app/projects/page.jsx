@@ -134,7 +134,7 @@ export default function ProjectsPage() {
               Abdul Haleem Mamangcao
             </span>
           </Link>
-          <h1 className="text-3xl text-midnight-100 dark:text-white sm:text-4xl font-bold mb-8">
+          <h1 className="text-4xl text-midnight-100 dark:text-white font-bold mb-8">
             All Projects
           </h1>
         </div>
@@ -225,7 +225,7 @@ export default function ProjectsPage() {
                                 href={project.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group inline-flex items-start gap-1.5 text-sm text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-yellow-200 transition-colors"
+                                className="group inline-flex items-start gap-1.5 font-semibold text-sm text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-yellow-200 transition-colors"
                               >
                                 <span>{project.title}</span>
                                 <ArrowUpRight className="size-4 text-gray-400 dark:text-gray-200 flex-shrink-0 mt-0.5 transition-transform group-hover:text-purple-600 dark:group-hover:text-yellow-200 group-hover:-translate-y-1 group-hover:translate-x-1" />
