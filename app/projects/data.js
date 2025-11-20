@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "Al-Jalis As-Salih, Inc.",
+    title: "Al-Jalis As-Salih, Inc. (v2)",
     desc: "Empowering communities through authentic Islamic education.",
     year: "2025",
     made: "Al-Jalis As-Salih, Inc.",
@@ -26,7 +26,7 @@ export const projects = [
     href: "https://academy.thegoodcompanion.net",
   },
   {
-    title: "Al-Jalis As-Salih, Inc. version 1.0",
+    title: "Al-Jalis As-Salih, Inc. (v1)",
     desc: "Empowering communities through authentic Islamic education.",
     year: "2019",
     made: "Al-Jalis As-Salih, Inc.",
