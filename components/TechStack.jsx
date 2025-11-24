@@ -45,15 +45,23 @@ export default function TechStack() {
       { name: "CSS", icon: "css3" },
       { name: "Bootstrap", icon: "bootstrap5" },
       { name: "Material UI", icon: "materialui" },
-      { name: "ESLint", icon: "eslint" },
-      { name: "Prettier", icon: "prettier" },
     ],
     "CMS & No Code": [{ name: "WordPress", icon: "wordpress" }],
+    "AI / LLMs": [
+      { name: "Gemini", icon: "gemini" },
+    ],
     "Developer Tools": [
       { name: "git", icon: "git" },
       { name: "GitHub", icon: "github" },
       { name: "VS Code", icon: "vscode" },
+      { name: "npm", icon: "npm2" },
+      { name: "vercel", icon: "vercel" },
+      { name: "Google Analytics", icon: "analytics" },
+      { name: "ESLint", icon: "eslint" },
+      { name: "Prettier", icon: "prettier" },
+
     ],
+    
   };
 
   return (
@@ -67,7 +75,7 @@ export default function TechStack() {
                 {techs.map((t) => (
                   <Tooltip key={t.name} sideOffset={12}>
                     <TooltipTrigger>
-                      <div className="flex items-center justify-center w-7 h-7 lg:w-8 lg:h-8 transition-transform duration-200 hover:scale-110">
+                      <div className="flex items-center justify-center w-6 h-6 lg:w-9 lg:h-9 transition-transform duration-200 hover:scale-110">
                         {t.icon === "vitejs" ? (
                           <Image
                             src="https://vitejs.dev/logo.svg"
@@ -93,11 +101,20 @@ export default function TechStack() {
                             width={36}
                             height={36}
                           />
+                        ) : t.icon === "gemini" ? (
+                          <Image
+                            src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg"
+                            alt="Gemini"
+                            width={36}
+                            height={36}
+                          />
                         ) : (
                           <StackIcon
                             name={t.icon}
                             variant={currentTheme === "dark" ? "dark" : "light"}
-                            className={currentTheme === "dark" ? "brightness-125" : ""}
+                            className={
+                              currentTheme === "dark" ? "brightness-125" : ""
+                            }
                           />
                         )}
                       </div>

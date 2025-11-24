@@ -29,9 +29,9 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-4 lg:px-36 py-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex flex-col gap-4">
           <Experience />
+          <Hackathon/>
           </div>
         <div className="flex flex-col gap-4">
-          <Hackathon/>
           <TechStack/>
           <BeyondCoding/>
           </div>

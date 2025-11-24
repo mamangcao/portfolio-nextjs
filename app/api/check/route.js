@@ -12,3 +12,5 @@ export async function GET() {
     return NextResponse.json({ error: error.message });
   }
 }
+
+// para ma check kung anong available na gemini model ang pwede gamitin ng API KEY mo.

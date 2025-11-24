@@ -11,7 +11,7 @@ export default function Projects() {
     },
     {
       title: "Portfolio / Creative Resume",
-      desc: "Built with Next.js and Tailwind CSS for showcasing creative resume.",
+      desc: "Powered by Gemini, which drives an AI chat feature that responds as me in real time.",
       url: "GitHub Repository",
       href: "https://github.com/mamangcao/portfolio-nextjs",
     },
