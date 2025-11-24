@@ -20,16 +20,16 @@ export default function Footer() {
   return (
     <footer className="max-w-6xl mx-auto px-4 lg:px-36 text-black dark:text-white text-xs lg:text-sm py-8 text-center">
       <div className="text-xs mt-8 flex flex-col items-center gap-2">
-        {/* First line: Next.js, Tailwind CSS, Gemini */}
-        <div className="flex flex-wrap items-center justify-center gap-2">
+
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-2 lg:mb-0">
           <span className="flex items-center gap-1">
             Built with
             <StackIcon
-              name="nextjs2"
+              name="nextjs"
               variant={currentTheme === "dark" ? "dark" : "light"}
-              className="w-4 h-4"
+              className="w-10 h-10"
             />
-            Next.js and
+            and
           </span>
           <span className="flex items-center gap-1">
             <StackIcon name="tailwindcss" variant="dark" className="w-4 h-4" />
@@ -47,7 +47,6 @@ export default function Footer() {
           </span>
         </div>
 
-        {/* Second line: Deployment info */}
         <span className="w-full text-center">
           Deployed on Vercel, and developed in Visual Studio Code.
         </span>
