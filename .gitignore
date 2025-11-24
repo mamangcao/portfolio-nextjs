@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -15,31 +13,35 @@
 
 # next.js
 /.next/
+/.next/cache/        # optional build cache
 /out/
-/.next/cache/        # (optional) skip incremental cache files
+
+# turbopack (next.js 14 optional)
+.turbo/
 
 # production
 /build
 
 # misc
 .DS_Store
-Thumbs.db            # moved up for clarity
+Thumbs.db
 *.pem
 
-# debug
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-.eslintcache         # (optional) skip eslint cache
-.prettiercache       # (optional) skip prettier cache
+.eslintcache
+.prettiercache
 
-# env files (never commit secrets)
+# environment variables
 .env*
-!.env.example         # allow template env files
+!.env.example
+!.env.local
 
 # vercel
-.vercel
+.vercel/
 
 # typescript
 *.tsbuildinfo
