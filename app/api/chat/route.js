@@ -13,7 +13,6 @@ export async function POST(req) {
     }
 
     const result = await streamText({
-      // FIX: Use the specific model found in your list
       model: google('gemini-2.5-flash'), 
       system: portfolioContext,
       messages,
