@@ -21,7 +21,7 @@ export default function Footer() {
     <footer className="max-w-6xl mx-auto px-4 lg:px-36 text-black dark:text-white text-xs lg:text-sm py-8 text-center">
       <div className="text-xs mt-8 flex flex-col items-center gap-2">
 
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-2 lg:mb-0">
+        <div className="flex flex-wrap items-center justify-center gap-2">
           <span className="flex items-center gap-1">
             Built with
             <StackIcon
@@ -46,13 +46,9 @@ export default function Footer() {
             Gemini
           </span>
         </div>
-
-        <span className="w-full text-center">
-          Deployed on Vercel, and developed in Visual Studio Code.
-        </span>
       </div>
-      <div className="border-t border-gray-300 mt-4 mb-4"></div>© {year} Abdul
-      Haleem Mamangcao. All rights reserved.
+      <div className="border-t border-gray-300 mt-4 mb-4"></div>
+      <div className="mb-12">© {year} Abdul Haleem Mamangcao. All rights reserved.</div>
     </footer>
   );
 }
