@@ -14,13 +14,12 @@ export default function Footer() {
     const t = setTimeout(() => setMounted(true), 0);
     return () => clearTimeout(t);
   }, []);
-  
+
   const currentTheme = mounted ? theme : "light";
 
   return (
     <footer className="max-w-6xl mx-auto px-4 lg:px-36 text-black dark:text-white text-xs lg:text-sm py-8 text-center">
       <div className="text-xs mt-8 flex flex-col items-center gap-2">
-
         <div className="flex flex-wrap items-center justify-center gap-2">
           <span className="flex items-center gap-1">
             Built with
@@ -29,26 +28,18 @@ export default function Footer() {
               variant={currentTheme === "dark" ? "dark" : "light"}
               className="w-10 h-10"
             />
-            and
           </span>
+          and
           <span className="flex items-center gap-1">
             <StackIcon name="tailwindcss" variant="dark" className="w-4 h-4" />
             Tailwind CSS.
           </span>
-          <span className="flex items-center gap-1">
-            Powered by
-            <Image
-              src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg"
-              alt="Gemini"
-              width={16}
-              height={16}
-            />
-            Gemini
-          </span>
         </div>
       </div>
       <div className="border-t border-gray-300 mt-4 mb-4"></div>
-      <div className="mb-12">© {year} Abdul Haleem Mamangcao. All rights reserved.</div>
+      <div className="mb-12">
+        © {year} Abdul Haleem Mamangcao. All rights reserved.
+      </div>
     </footer>
   );
 }
