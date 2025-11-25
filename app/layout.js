@@ -1,11 +1,9 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Analytics } from "@vercel/analytics/next";
 import { Geist, Geist_Mono } from "next/font/google";
-
-// Chat with me pero AI Powered
-import { ChatWidget } from "@/components/ChatWidget";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { ChatWidget } from "@/components/ChatWidget"; // Chat with me pero AI Powered
 
 const geist = Geist({ subsets: ["latin"] });
 const geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -14,6 +12,9 @@ export const metadata = {
   title: "Abdul Haleem Mamangcao | Full-stack Developer",
   description:
     "I'm Abdul Haleem Mamangcao, an enthusiastic Junior Full-Stack Web Developer with hands-on experience building web applications using Laravel, React, Tailwind CSS, and MySQL. Passionate about improving my skills in both front-end and back-end development.",
+  verification: {
+    google: "DMuiibTrOHrdXquYlhGua985rxAbyiLL3MYi69Rnf3c",
+  },
   keywords: [
     "Abdul Haleem Mamangcao",
     "Full-stack Developer",
@@ -43,10 +44,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-    >
+    <html lang="en" suppressHydrationWarning>
       <body className={geist.className}>
         <ThemeProvider
           attribute="class"

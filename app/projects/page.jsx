@@ -230,6 +230,13 @@ export default function ProjectsPage() {
                                 <span>{project.title}</span>
                                 <ArrowUpRight className="size-4 text-gray-400 dark:text-gray-200 flex-shrink-0 mt-0.5 transition-transform group-hover:text-purple-600 dark:group-hover:text-yellow-200 group-hover:-translate-y-1 group-hover:translate-x-1" />
                               </a>
+                            ) : t.icon === "gemini" ? (
+                              <Image
+                                src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg"
+                                alt="Gemini"
+                                width={36}
+                                height={36}
+                              />
                             ) : (
                               <p className="text-sm font-semibold text-gray-900 dark:text-white">
                                 {project.title}
