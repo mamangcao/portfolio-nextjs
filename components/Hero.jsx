@@ -23,6 +23,7 @@ export default function Hero() {
             alt="Profile"
             onContextMenu={handleContextMenu}
             fill
+            sizes="(max-width: 640px) 250px, (max-width: 768px) 140px, 160px"
             className="object-cover dark:hidden"
             priority
           />
@@ -31,6 +32,7 @@ export default function Hero() {
             alt="Profile"
             onContextMenu={handleContextMenu}
             fill
+            sizes="(max-width: 640px) 250px, (max-width: 768px) 140px, 160px"
             className="object-cover hidden dark:block"
             priority
           />

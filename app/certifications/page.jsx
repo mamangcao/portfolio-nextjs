@@ -1,4 +1,4 @@
-import { certificates } from "./data";
+import { certificates } from "@/lib/data/certifications";
 import Link from "next/link";
 import { ArrowUpRight, MoveLeft } from "lucide-react";
 import Footer from "@/components/Footer";

@@ -1,6 +1,6 @@
 import { google } from '@ai-sdk/google';
 import { streamText } from 'ai';
-import { portfolioContext } from '@/lib/context';
+import { portfolioContext } from '@/lib/chat/context';
 
 export const maxDuration = 30;
 

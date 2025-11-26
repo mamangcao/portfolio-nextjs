@@ -1,5 +1,5 @@
 "use client";
-import { projects } from "./data";
+import { projects } from "@/lib/data/projects";
 import Link from "next/link";
 import { ArrowUpRight, MoveLeft } from "lucide-react";
 import Footer from "@/components/Footer";
