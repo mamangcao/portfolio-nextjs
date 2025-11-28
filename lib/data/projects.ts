@@ -1,4 +1,14 @@
-export const projects = [
+export interface Project {
+  title: string;
+  desc: string;
+  year: string;
+  built: string;
+  url: string;
+  href: string; 
+  made?: string; // Optional
+}
+
+export const projects: Project[] = [
   {
     title: "Al-Jalis As-Salih, Inc. (v2)",
     desc: "Empowering communities through authentic Islamic education.",

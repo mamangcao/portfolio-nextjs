@@ -4,7 +4,7 @@ import { portfolioContext } from '@/lib/chat/context';
 
 export const maxDuration = 30;
 
-export async function POST(req) {
+export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
 
@@ -21,6 +21,9 @@ export async function POST(req) {
     return result.toTextStreamResponse();
   } catch (error) {
     console.error("❌ Chat API Error:", error);
-    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    
+    return new Response(JSON.stringify({ error: errorMessage }), { status: 500 });
   }
 }

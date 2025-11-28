@@ -1,5 +1,6 @@
 "use client";
-import Card from "./Card"
+
+import Card from "./Card";
 import StackIcon from "tech-stack-icons";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -11,9 +12,18 @@ import {
   TooltipTrigger,
 } from "@/components/ui/global-tooltip";
 
+interface TechItem {
+  name: string;
+  icon: string;
+}
+
+interface StacksData {
+  [category: string]: TechItem[];
+}
+
 export default function TechStack() {
   const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 0);
@@ -22,7 +32,7 @@ export default function TechStack() {
 
   const currentTheme = mounted ? theme : "light";
 
-  const stacks = {
+  const stacks: StacksData = {
     Backend: [
       { name: "Laravel", icon: "laravel" },
       { name: "Node.js", icon: "nodejs" },
@@ -47,9 +57,7 @@ export default function TechStack() {
       { name: "Material UI", icon: "materialui" },
     ],
     "CMS & No Code": [{ name: "WordPress", icon: "wordpress" }],
-    "AI / LLMs": [
-      { name: "Gemini", icon: "gemini" },
-    ],
+    "AI / LLMs": [{ name: "Gemini", icon: "gemini" }],
     "Developer Tools": [
       { name: "git", icon: "git" },
       { name: "GitHub", icon: "github" },
@@ -59,9 +67,7 @@ export default function TechStack() {
       { name: "Google Analytics", icon: "analytics" },
       { name: "ESLint", icon: "eslint" },
       { name: "Prettier", icon: "prettier" },
-
     ],
-    
   };
 
   return (

@@ -1,4 +1,5 @@
 "use client";
+
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import StackIcon from "tech-stack-icons";
@@ -7,7 +8,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 0);

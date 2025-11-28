@@ -6,17 +6,26 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { X, ArrowUp, MessageCircleMore, MessageSquareMore } from 'lucide-react';
+import { X, ArrowUp, MessageSquareMore } from 'lucide-react';
 import { CheckBadgeIcon } from '@heroicons/react/24/solid';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
+// Define the shape of a message object
+interface Message {
+  id: number;
+  role: 'user' | 'assistant';
+  content: string;
+}
+
 export function ChatWidget() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState([]);
-  const [input, setInput] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const messagesEndRef = useRef(null);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [input, setInput] = useState<string>('');
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  
+  // Specific type for the div reference
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (messagesEndRef.current) {
@@ -24,11 +33,12 @@ export function ChatWidget() {
     }
   }, [messages]);
 
-  const handleSend = async (e) => {
+  // Type the form event
+  const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
 
-    const userMessage = { id: Date.now(), role: 'user', content: input };
+    const userMessage: Message = { id: Date.now(), role: 'user', content: input };
     setMessages(prev => [...prev, userMessage]);
     setInput('');
     setIsLoading(true);
@@ -46,6 +56,7 @@ export function ChatWidget() {
       });
 
       if (!response.ok) throw new Error('Network response was not ok');
+      if (!response.body) throw new Error('No response body');
 
       const aiMessageId = Date.now() + 1;
       setMessages(prev => [...prev, { id: aiMessageId, role: 'assistant', content: '' }]);
@@ -157,26 +168,23 @@ export function ChatWidget() {
                         <ReactMarkdown 
                           remarkPlugins={[remarkGfm]}
                           components={{
-                            // Link styling
-                            a: ({node, ...props}) => (
+                            // We use 'any' here for props because ReactMarkdown types can be complex to match perfectly
+                            a: ({node, ...props}: any) => (
                               <a {...props} className="text-blue-500 hover:underline font-medium break-words" target="_blank" rel="noopener noreferrer" />
                             ),
-                            // Bold styling
-                            strong: ({node, ...props}) => (
+                            strong: ({node, ...props}: any) => (
                               <span {...props} className="font-bold text-black dark:text-white" />
                             ),
-                            // List styling
-                            ul: ({node, ...props}) => (
+                            ul: ({node, ...props}: any) => (
                               <ul {...props} className="list-disc list-inside ml-2 mt-1 space-y-1" />
                             ),
-                            ol: ({node, ...props}) => (
+                            ol: ({node, ...props}: any) => (
                               <ol {...props} className="list-decimal list-inside ml-2 mt-1 space-y-1" />
                             ),
-                            li: ({node, ...props}) => (
+                            li: ({node, ...props}: any) => (
                               <li {...props} className="" />
                             ),
-                            // Paragraph spacing
-                            p: ({node, ...props}) => (
+                            p: ({node, ...props}: any) => (
                               <p {...props} className="mb-2 last:mb-0 leading-relaxed" />
                             )
                           }}
@@ -235,7 +243,7 @@ export function ChatWidget() {
 
       <Button
         onClick={() => setIsOpen(!isOpen)}
-        className={`h-12 rounded-full shadow-xl transition-all duration-300 flex items-center gap-2 px-6 cursor-pointer
+        className={`h-12 rounded-full shadow-xl transition-all duration-300 flex items-center gap-2 px-5 cursor-pointer
           ${isOpen 
             ? 'w-12 p-0 bg-gray-200 hover:bg-gray-300 text-gray-800' 
             : 'bg-black hover:bg-black dark:bg-white hover:dark:bg-white text-white dark:text-black'

@@ -32,20 +32,28 @@ export default function StravaCard() {
 
         <div className="grid grid-cols-2 gap-2">
           <button className="group flex flex-col items-center justify-center gap-1 p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:scale-105 transition-colors text-zinc-600 dark:text-zinc-300">
-            <SneakerMoveIcon size={24} weight="duotone" className="group-hover:animate-run-step" />
+            <SneakerMoveIcon
+              size={24}
+              weight="duotone"
+              className="group-hover:animate-run-step"
+            />
             <span className="text-xs font-medium">Run</span>
           </button>
           <button className="group flex flex-col items-center justify-center gap-1 p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:scale-105 transition-colors text-zinc-600 dark:text-zinc-300">
-            <SneakerIcon size={24} weight="duotone" className="group-hover:animate-walk-step" />
-            <span className="text-xs font-medium">
-              Walk
-            </span>
+            <SneakerIcon
+              size={24}
+              weight="duotone"
+              className="group-hover:animate-walk-step"
+            />
+            <span className="text-xs font-medium">Walk</span>
           </button>
           <button className="group flex flex-col items-center justify-center gap-1 p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:scale-105 transition-colors text-zinc-600 dark:text-zinc-300">
-            <PulseIcon size={24} weight="duotone" className="group-hover:animate-wiggle" />
-            <span className="text-xs font-medium">
-              Workout
-            </span>
+            <PulseIcon
+              size={24}
+              weight="duotone"
+              className="group-hover:animate-wiggle"
+            />
+            <span className="text-xs font-medium">Workout</span>
           </button>
           <button className="group flex flex-col items-center justify-center gap-1 p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-600 hover:scale-105 dark:text-zinc-300">
             <BarbellIcon

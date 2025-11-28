@@ -1,67 +1,18 @@
-import Card from "./Card"
+import Card from "./Card";
+import { experiences } from "@/lib/data/experiences";
 
 export default function Experience() {
-  const experiences = [
-    {
-      title: "Full-Stack Web Developer",
-      company: "Freelance",
-      year: "2025",
-    },
-    {
-      title: "Full-Stack Web Developer",
-      company: "TGC Academy · Contract",
-      year: "2024-2025",
-    },
-    {
-      title: "Academic Tutor",
-      company: "Success Tutoring · Contract",
-      year: "2024-2025",
-    },
-    {
-      title: "Virtual Assistant",
-      company: "Private Client · Freelance",
-      year: "2022-2022",
-    },
-    {
-      title: "IT Support Specialist",
-      company: "MILG - Lanao del Sur · Contract",
-      year: "2020-2021",
-    },
-    {
-      title: "IT Support Specialist",
-      company: "Al-Jalis As-Salih, Inc. · Contract",
-      year: "2019-2020",
-    },
-    {
-      title: "Full-Stack Web Developer",
-      company: "Al-Jalis As-Salih, Inc. · Contract",
-      year: "2018-2019",
-    },
-    {
-      title: "Junior Network Engineer",
-      company: "MSU-IIT ICTC-CFSS · Internship",
-      year: "2018-2018",
-    },
-    {
-      title: "Project Manager",
-      company: "FabLab Mindanao · Internship",
-      year: "2017-2017",
-    },
-    {
-      title: "Hello World! 👋🏻",
-      company: "Wrote my first line of code",
-      year: "2014",
-    },
-  ];
+  // Only get the first 10 recent experiences
+  const recentExperiences = experiences.slice(0, 10);
 
   return (
     <Card title="Experience">
       <ul role="list" className="space-y-8">
-        {experiences.map((exp, idx) => (
+        {recentExperiences.map((exp, idx) => (
           <li key={idx} className="group relative flex gap-x-4 cursor-default">
             <div
               className={`absolute left-0 top-1 flex w-6 justify-center ${
-                idx === experiences.length - 1 ? "h-4" : "-bottom-9"
+                idx === recentExperiences.length - 1 ? "h-4" : "-bottom-9"
               }`}
             >
               <div className="w-px bg-gray-300 dark:bg-zinc-700 transition-colors" />

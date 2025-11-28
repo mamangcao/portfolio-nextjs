@@ -35,10 +35,10 @@
     "**/*.mts",
     "**/*.ts",
     "**/*.tsx",
-    "components/ui/Card.jsx",
+    "components/sections/Card.tsx",
     ".next\\dev/types/**/*.ts",
     ".next\\dev/types/**/*.ts"
-  ],
+, "app/projects/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

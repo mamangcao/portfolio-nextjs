@@ -12,7 +12,7 @@ import StravaCard from "@/components/strava/StravaCard";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
-  const year = new Date().getFullYear();
+
   return (
     <main className="min-h-screen text-gray-900">
       <section className="max-w-6xl mx-auto lg:px-28">

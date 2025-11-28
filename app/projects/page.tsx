@@ -1,4 +1,5 @@
 "use client";
+
 import { projects } from "@/lib/data/projects";
 import Link from "next/link";
 import { ArrowUpRight, MoveLeft } from "lucide-react";
@@ -14,8 +15,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/global-tooltip";
 
-// Tech stack icon mapping
-const techIconMap = {
+const techIconMap: Record<string, string> = {
   laravel: "laravel",
   nodejs: "nodejs",
   php: "php",
@@ -40,7 +40,7 @@ const techIconMap = {
 
 export default function ProjectsPage() {
   const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 0);
@@ -49,7 +49,7 @@ export default function ProjectsPage() {
 
   const currentTheme = mounted ? theme : "light";
 
-  const renderTechIcons = (builtWith) => {
+  const renderTechIcons = (builtWith: string | undefined) => {
     if (!builtWith) return null;
     const techs = builtWith.split(",").map((tech) => tech.trim().toLowerCase());
 
@@ -126,8 +126,6 @@ export default function ProjectsPage() {
     );
   };
 
-  const year = new Date().getFullYear();
-
   return (
     <main className="min-h-screen dark:bg-midnight-50 fade-in-up">
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-36 pt-16 sm:pt-24 pb-12">
@@ -149,7 +147,6 @@ export default function ProjectsPage() {
           <div className="mt-6 sm:mt-8 flow-root">
             <div className="-mx-4 -my-2 sm:-mx-6 lg:-mx-8">
               <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-                {/* Desktop */}
                 <table className="hidden min-w-full divide-y divide-gray-300 dark:divide-zinc-800 md:table">
                   <thead className="bg-white dark:bg-midnight-50 sticky top-0 z-10">
                     <tr>
@@ -211,7 +208,6 @@ export default function ProjectsPage() {
                   </tbody>
                 </table>
 
-                {/* Mobile*/}
                 <div className="md:hidden">
                   <div className="sticky top-0 z-10 bg-white dark:bg-midnight-50 border-b border-gray-300 dark:border-zinc-800 px-4 py-3 mb-2">
                     <div className="flex items-center gap-x-3 text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide">

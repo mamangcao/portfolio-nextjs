@@ -1,15 +1,18 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, Calendar, MapPin } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { CheckBadgeIcon } from "@heroicons/react/24/solid";
-import ThemeToggle from "@/components/ui/ThemeToggle"
+import ThemeToggle from "@/components/ui/ThemeToggle";
+import React from "react";
 
 export default function Hero() {
-  const handleContextMenu = (e) => {
+  const handleContextMenu = (e: React.MouseEvent<HTMLImageElement>) => {
     e.preventDefault(); // Prevent right-click
   };
+
   return (
     <section className="relative text-gray-900 p-4 sm:p-6 md:p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 md:gap-8">
       <div className="absolute top-4 right-4 md:top-8 md:right-8 z-50">
