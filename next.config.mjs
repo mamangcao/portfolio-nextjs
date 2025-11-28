@@ -22,6 +22,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.brandfetch.io",
       },
+      {
+        protocol: 'https',
+        hostname: 'badges.strava.com',
+      },
     ],
   },
 };

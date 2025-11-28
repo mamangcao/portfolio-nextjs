@@ -2,7 +2,6 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import StackIcon from "tech-stack-icons";
-import Image from "next/image";
 
 export default function Footer() {
   const year = new Date().getFullYear();

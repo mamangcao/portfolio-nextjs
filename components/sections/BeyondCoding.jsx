@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./Card"
 
 export default function BeyondCoding() {
   return (
@@ -7,7 +7,7 @@ export default function BeyondCoding() {
         When I&apos;m not coding, I dedicate time to continuously enhancing my skills, exploring new technologies, and expanding my knowledge to stay adaptable and ready for new challenges.
       </p>
       <p className="mt-5 text-justify">
-         At the same time, I make sure to keep a healthy balance by staying active and energized whether it’s playing basketball, which sharpens my focus and teamwork, or taking car rides, which give me time to relax, reflect, and recharge.
+         At the same time, I keep my energy levels high by mixing high-intensity workouts and running, or taking long walks to reflect and recharge, which give me the space to clear my head and stay focused.
       </p>
     </Card>
   );

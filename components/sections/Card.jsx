@@ -1,4 +1,4 @@
-import { User, Mail, Info, Blocks, GraduationCap, FileBadge, Computer, ArrowUpRight, IdCard, BriefcaseBusiness, FolderCode, DoorOpen } from "lucide-react";
+import { User, Mail, Info, Blocks, GraduationCap, FileBadge, Computer, ArrowUpRight, IdCard, BriefcaseBusiness, FolderCode, DoorOpen, SquareActivity } from "lucide-react";
 
 export default function Card({ title, children, viewAllLink }) {
 
@@ -13,6 +13,7 @@ export default function Card({ title, children, viewAllLink }) {
     "Eligibility": <IdCard className="w-4.5 h-4.5 text-black dark:text-white" />,
     "Hackathon Achievements": <Computer className="w-4 h-4 text-black dark:text-white" />,
     "Beyond Coding": <DoorOpen className="w-4 h-4 text-black dark:text-white" />,
+    "Physical Activities": <SquareActivity  className="w-4 h-4 text-black dark:text-white" />,
   };
 
   const icon = icons[title] || <Info className="w-4 h-4 text-gray-400" />;

@@ -1,5 +1,5 @@
 "use client";
-import Card from "./Card";
+import Card from "./Card"
 import StackIcon from "tech-stack-icons";
 import Image from "next/image";
 import { useTheme } from "next-themes";

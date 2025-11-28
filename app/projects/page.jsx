@@ -2,7 +2,7 @@
 import { projects } from "@/lib/data/projects";
 import Link from "next/link";
 import { ArrowUpRight, MoveLeft } from "lucide-react";
-import Footer from "@/components/Footer";
+import Footer from "@/components/sections/Footer";
 import Image from "next/image";
 import StackIcon from "tech-stack-icons";
 import { useTheme } from "next-themes";

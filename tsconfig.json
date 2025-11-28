@@ -35,7 +35,7 @@
     "**/*.mts",
     "**/*.ts",
     "**/*.tsx",
-    "components/Card.jsx",
+    "components/ui/Card.jsx",
     ".next\\dev/types/**/*.ts",
     ".next\\dev/types/**/*.ts"
   ],

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Mail, Calendar, MapPin } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { CheckBadgeIcon } from "@heroicons/react/24/solid";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "@/components/ui/ThemeToggle"
 
 export default function Hero() {
   const handleContextMenu = (e) => {

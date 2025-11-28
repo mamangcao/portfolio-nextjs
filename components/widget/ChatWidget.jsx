@@ -8,6 +8,8 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { X, ArrowUp, MessageCircleMore } from 'lucide-react';
 import { CheckBadgeIcon } from '@heroicons/react/24/solid';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +24,7 @@ export function ChatWidget() {
     }
   }, [messages]);
 
- const handleSend = async (e) => {
+  const handleSend = async (e) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
 
@@ -143,13 +145,45 @@ export function ChatWidget() {
                       </Avatar>
                     )}
                     <div
-                      className={`px-4 py-2.5 text-sm shadow-sm max-w-[80%] whitespace-pre-wrap ${
+                      className={`px-4 py-2.5 text-sm shadow-sm max-w-[85%] ${
                         m.role === 'user'
-                          ? 'bg-midnight-50 dark:bg-purple-700 text-white rounded-2xl rounded-tr-none'
+                          ? 'bg-midnight-50 dark:bg-gray-50 text-white dark:text-zinc-900 rounded-2xl rounded-tr-none whitespace-pre-wrap'
                           : 'bg-white dark:bg-zinc-900 border text-gray-700 dark:text-white rounded-2xl rounded-tl-none'
                       }`}
                     >
-                      {m.content}
+                      {m.role === 'user' ? (
+                        m.content
+                      ) : (
+                        <ReactMarkdown 
+                          remarkPlugins={[remarkGfm]}
+                          components={{
+                            // Link styling
+                            a: ({node, ...props}) => (
+                              <a {...props} className="text-blue-500 hover:underline font-medium break-words" target="_blank" rel="noopener noreferrer" />
+                            ),
+                            // Bold styling
+                            strong: ({node, ...props}) => (
+                              <span {...props} className="font-bold text-black dark:text-white" />
+                            ),
+                            // List styling
+                            ul: ({node, ...props}) => (
+                              <ul {...props} className="list-disc list-inside ml-2 mt-1 space-y-1" />
+                            ),
+                            ol: ({node, ...props}) => (
+                              <ol {...props} className="list-decimal list-inside ml-2 mt-1 space-y-1" />
+                            ),
+                            li: ({node, ...props}) => (
+                              <li {...props} className="" />
+                            ),
+                            // Paragraph spacing
+                            p: ({node, ...props}) => (
+                              <p {...props} className="mb-2 last:mb-0 leading-relaxed" />
+                            )
+                          }}
+                        >
+                          {m.content}
+                        </ReactMarkdown>
+                      )}
                     </div>
                   </div>
                 ))}

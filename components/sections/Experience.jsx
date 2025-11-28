@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./Card"
 
 export default function Experience() {
   const experiences = [
@@ -86,7 +86,7 @@ export default function Experience() {
                     {exp.company}
                   </p>
                 </div>
-                <span className="text-[10px] lg:text-xs font-mono text-gray-800 dark:text-white border border-gray-200 bg-white dark:bg-midnight-100 px-2 py-0.5 rounded-full group-hover:border-black dark:group-hover:border-white">
+                <span className="text-[10px] lg:text-xs font-mono text-gray-800 dark:text-white border border-gray-200 bg-white dark:bg-midnight-100 px-2 py-0.5 rounded-full">
                   {exp.year}
                 </span>
               </div>

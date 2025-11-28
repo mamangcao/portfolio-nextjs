@@ -12,6 +12,7 @@
     "@ai-sdk/google": "^2.0.42",
     "@ai-sdk/react": "^2.0.101",
     "@heroicons/react": "^2.2.0",
+    "@phosphor-icons/react": "^2.1.10",
     "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-scroll-area": "^1.2.10",
     "@radix-ui/react-slot": "^1.2.4",
@@ -30,6 +31,8 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
     "tailwind-merge": "^3.4.0",
     "tech-stack-icons": "^3.3.2"
   },

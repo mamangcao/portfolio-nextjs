@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import Card from "./Card";
+import Card from "./Card"
 
 export default function Projects() {
   const projects = [
@@ -38,13 +38,13 @@ export default function Projects() {
               <h3 className="text-sm font-semibold text-gray-900 dark:text-white transition-colors">
                 {p.title}
               </h3>
-              <ArrowUpRight className="size-4 lg:size-5 text-gray-700 dark:text-gray-200 group-hover:-translate-y-2 group-hover:translate-x-2 transition-all flex-shrink-0" />
+              <ArrowUpRight className="size-3 lg:size-4 text-gray-700 dark:text-gray-200 group-hover:-translate-y-2 group-hover:translate-x-2 transition-all flex-shrink-0" />
             </div>
             <p className="text-xs text-gray-600 dark:text-gray-200 mt-1 transition-colors">
               {p.desc}
             </p>
             <div className="mt-2">
-              <span className="text-xs font-mono text-gray-800 dark:text-white border border-gray-300 dark:border-gray-400 bg-white dark:bg-midnight-100 px-2 py-1 rounded-full group-hover:bg-midnight-100 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black">
+              <span className="text-xs font-mono text-gray-800 dark:text-white border border-gray-300 dark:border-gray-400 bg-white dark:bg-midnight-100 px-2 py-1 rounded-full">
                 {p.url}
               </span>
             </div>

@@ -1,7 +1,7 @@
 import { certificates } from "@/lib/data/certifications";
 import Link from "next/link";
 import { ArrowUpRight, MoveLeft } from "lucide-react";
-import Footer from "@/components/Footer";
+import Footer from "@/components/sections/Footer";
 
 export default function CertificationsPage() {
   const year = new Date().getFullYear();
