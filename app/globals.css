@@ -35,6 +35,55 @@
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+@utility animate-wiggle {
+  animation: wiggle 0.75s ease-in-out infinite;
+}
+
+@keyframes run-step {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
+}
+
+@utility animate-run-step {
+  animation: run-step 0.5s ease-in-out infinite;
+}
+
+
+@keyframes run-wiggle {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+@utility animate-run-wiggle {
+  animation: run-wiggle 0.75s ease-in-out infinite;
+}
+
+@keyframes walk-step {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+@utility animate-walk-step {
+  animation: walk-step 0.75s ease-in-out infinite;
+}
+
+@keyframes workout-wiggle {
+  0%, 100% { transform: rotate(-2deg) scale(1); }
+  50% { transform: rotate(2deg) scale(1.05); }
+}
+
+@utility animate-workout-wiggle {
+  animation: workout-wiggle 0.25s ease-in-out infinite;
+}
+
+
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

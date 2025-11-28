@@ -6,7 +6,7 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { X, ArrowUp, MessageCircleMore } from 'lucide-react';
+import { X, ArrowUp, MessageCircleMore, MessageSquareMore } from 'lucide-react';
 import { CheckBadgeIcon } from '@heroicons/react/24/solid';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -235,7 +235,7 @@ export function ChatWidget() {
 
       <Button
         onClick={() => setIsOpen(!isOpen)}
-        className={`h-12 rounded-full shadow-xl transition-all duration-300 flex items-center gap-2 px-5 cursor-pointer
+        className={`h-12 rounded-full shadow-xl transition-all duration-300 flex items-center gap-2 px-6 cursor-pointer
           ${isOpen 
             ? 'w-12 p-0 bg-gray-200 hover:bg-gray-300 text-gray-800' 
             : 'bg-black hover:bg-black dark:bg-white hover:dark:bg-white text-white dark:text-black'
@@ -246,7 +246,7 @@ export function ChatWidget() {
             <X className="h-6 w-6" />
         ) : (
             <>
-                <MessageCircleMore className="h-5 w-5 animate-bounce" />
+                <MessageSquareMore className="h-5 w-5 animate-wiggle" />
                 <span className="font-medium cursor-pointer">Chat with Abdul Haleem</span>
             </>
         )}
