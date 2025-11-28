@@ -42,7 +42,7 @@ export default function StravaCard() {
             </span>
           </button>
           <button className="group flex flex-col items-center justify-center gap-1 p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:scale-105 transition-colors text-zinc-600 dark:text-zinc-300">
-            <PulseIcon size={24} weight="duotone" className="group-hover:animate-workout-wiggle" />
+            <PulseIcon size={24} weight="duotone" className="group-hover:animate-wiggle" />
             <span className="text-xs font-medium">
               Workout
             </span>
@@ -51,7 +51,7 @@ export default function StravaCard() {
             <BarbellIcon
               size={24}
               weight="duotone"
-              className="group-hover:animate-wiggle"
+              className="group-hover:animate-workout-jump"
             />
             <span className="text-xs font-medium">Strength</span>
           </button>
